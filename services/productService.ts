@@ -35,14 +35,6 @@ export const getProductById = (id: string): Product | undefined => {
   return getAllProducts().find(product => product.id === id)
 }
 
-export const searchProducts = (query: string): Product[] => {
-  const lowercaseQuery = query.toLowerCase()
-  return getAllProducts().filter(product => 
-    product.title.toLowerCase().includes(lowercaseQuery) ||
-    product.subtitle.toLowerCase().includes(lowercaseQuery)
-  )
-}
-
 // New function to get products by category filter
 export const getFilteredProducts = (category: string | null): Product[] => {
   if (category === null) {
