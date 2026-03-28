@@ -1,0 +1,58 @@
+[
+  {
+    "id": "cheesecake-frutos-rojos",
+    "title": "Cheesecake Frutos Rojos",
+    "subtitle": "Base crujiente, topping de frutos rojos",
+    "image": "/CheeseCake-FrutosRojos-Porcion.webp",
+    "buttonText": "Encargar Ahora",
+    "imagePosition": "40% 40%"
+  },
+  {
+    "id": "alfajores-dulce-leche",
+    "title": "Alfajores Artesanales",
+    "subtitle": "Tradicionales, rellenos de dulce de leche",
+    "image": "/Alafajores-Artesanales-DulceDeLeche.webp",
+    "buttonText": "Encargar Ahora",
+    "imagePosition": "50% 30%"
+  },
+  {
+    "id": "mini-cakes",
+    "title": "Mini Cakes Artesanales",
+    "subtitle": "Bandeja de mini cakes de multiples sabores",
+    "image": "/MiniCakes-Artesanales.webp",
+    "buttonText": "Encargar Ahora",
+    "imagePosition": "30% 40%"
+  },
+  {
+    "id": "huevos-pascua-cremosos",
+    "title": "Huevos de Pascua Creamosos",
+    "subtitle": "Exclusivo, brownie, y capas de chocolate",
+    "image": "/Huevo-Pascua-Cremoso.webp",
+    "buttonText": "Encargar Ahora",
+    "imagePosition": "60% 70%"
+  },
+  {
+    "id": "mini-postres",
+    "title": "Mini Postres",
+    "subtitle": "Deliciosos mini postres de varios sabores",
+    "image": "/Mini-Postres.webp",
+    "buttonText": "Encargar Ahora",
+    "imagePosition": "50% 50%"
+  },
+  {
+    "id": "brownie-kinder-bueno",
+    "title": "Brownie Kinder Bueno",
+    "subtitle": "Brownie humedo con Kinder Bueno",
+    "image": "/Brownie-Kinder-Bueno.webp",
+    "buttonText": "Encargar Ahora",
+    "imagePosition": "70% 30%"
+  },
+  {
+    "id": "cookies-artesanales",
+    "title": "Cookies Artesanales",
+    "subtitle": "Con corazon de chocolate",
+    "image": "/Cookies-Artesanales.webp",
+    "buttonText": "Encargar Ahora",
+    "imagePosition": "40% 30%"
+  }
+]

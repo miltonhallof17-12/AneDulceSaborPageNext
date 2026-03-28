@@ -1,0 +1,26 @@
+{
+  "name": "Ane Dulce Sabor",
+  "short_name": "Ane Dulce",
+  "description": "Delicias artesanales de todo tipo para todos los gustos. Pasteles, postres y dulces hechos con amor.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5efe6",
+  "theme_color": "#D85C56",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es-ES",
+  "categories": ["food", "bakery", "confectionery"],
+  "icons": [
+    {
+      "src": "/Logo.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Logo.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
