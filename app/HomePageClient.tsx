@@ -50,7 +50,7 @@ const HomePageClient = () => {
             </GlowingButton>
           </Link>
           <p className="mt-4 text-gray-600">
-            Explora nuestra completa colección de dulces artesanales
+            Explora nuestra completa colección de dulces artesanales, tortas caseras y postres únicos.
           </p>
         </div>
       </section>
