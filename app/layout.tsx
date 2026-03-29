@@ -9,6 +9,14 @@ export const viewport: Viewport = {
   themeColor: "#D85C56",
 };
 
+import { Playfair_Display } from 'next/font/google'
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  style: ['normal', 'italic'],
+})
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://ane-dulce-sabor.vercel.app"),
   title: {
@@ -67,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es" className={playfair.className}>
       <body>
         {children}
 
