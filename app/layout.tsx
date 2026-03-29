@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import AnalyticsTracker from "../components/AnalyticsTracker";
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -8,9 +9,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ane-dulce-sabor.vercel.app/'),
+  metadataBase: new URL('https://ane-dulce-sabor.vercel.app'),
   title: {
-    default: "Ane Dulce Sabor - Dulces Artesanales con amor",
+    default: "Ane Dulce Sabor - Dulces Artesanales",
     template: "%s | Ane Dulce Sabor"
   },
   description: "Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.",
@@ -32,21 +33,21 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_AR',
-    url: 'https://ane-dulce-sabor.vercel.app/',
+    url: 'https://ane-dulce-sabor.vercel.app',
     siteName: 'Ane Dulce Sabor',
-    title: 'Ane Dulce Sabor - Dulces Artesanales con amor',
+    title: 'Ane Dulce Sabor - Dulces Artesanales',
     description: 'Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.',
     images: [
       {
         url: '/Logo.webp',
         width: 1200,
         height: 630,
-        alt: 'Ane Dulce Sabor - Dulces Artesanales con amor',
+        alt: 'Ane Dulce Sabor - Dulces Artesanales',
       },
     ],
   },
   alternates: {
-    canonical: 'https://ane-dulce-sabor.vercel.app/',
+    canonical: 'https://ane-dulce-sabor.vercel.app',
   },
   icons: {
     icon: '/Logo.webp',
@@ -61,9 +62,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Google Analytics */}
+        {gaId && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${gaId}');
+                `,
+              }}
+            />
+          </>
+        )}
+        <AnalyticsTracker />
+      </body>
     </html>
   );
 }
