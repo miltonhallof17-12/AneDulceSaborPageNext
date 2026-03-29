@@ -14,4 +14,4 @@ Allow: /sitemap.xml
 
 Crawl-delay: 1
 
-Sitemap: https://ane-dulce-sabor.netlify.app/sitemap.xml
+Sitemap: https://ane-dulce-sabor.vercel.app/sitemap.xml

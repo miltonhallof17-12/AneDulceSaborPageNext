@@ -8,9 +8,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://anedulcesabor.com'),
+  metadataBase: new URL('https://ane-dulce-sabor.com/'),
   title: {
-    default: "Ane Dulce Sabor - Dulces Artesanales",
+    default: "Ane Dulce Sabor - Dulces Artesanales con amor",
     template: "%s | Ane Dulce Sabor"
   },
   description: "Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.",
@@ -32,27 +32,21 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_AR',
-    url: 'https://anedulcesabor.com',
+    url: 'https://ane-dulce-sabor.com/',
     siteName: 'Ane Dulce Sabor',
-    title: 'Ane Dulce Sabor - Dulces Artesanales',
+    title: 'Ane Dulce Sabor - Dulces Artesanales con amor',
     description: 'Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.',
     images: [
       {
         url: '/Logo.webp',
         width: 1200,
         height: 630,
-        alt: 'Ane Dulce Sabor - Dulces Artesanales',
+        alt: 'Ane Dulce Sabor - Dulces Artesanales con amor',
       },
     ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ane Dulce Sabor - Dulces Artesanales',
-    description: 'Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.',
-    images: ['/Logo.webp'],
-  },
   alternates: {
-    canonical: 'https://anedulcesabor.com',
+    canonical: 'https://ane-dulce-sabor.com/',
   },
   icons: {
     icon: '/Logo.webp',
