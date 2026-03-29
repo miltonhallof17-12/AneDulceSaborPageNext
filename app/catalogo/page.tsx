@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     images: ["/Logo.webp"],
   },
   alternates: {
-    canonical: 'https://ane-dulce-sabor.com/catalogo',
+    canonical: 'https://ane-dulce-sabor.vercel.app/catalogo',
   },
 }
 

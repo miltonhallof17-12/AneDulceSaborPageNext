@@ -8,7 +8,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ane-dulce-sabor.com/'),
+  metadataBase: new URL('https://ane-dulce-sabor.vercel.app/'),
   title: {
     default: "Ane Dulce Sabor - Dulces Artesanales con amor",
     template: "%s | Ane Dulce Sabor"
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_AR',
-    url: 'https://ane-dulce-sabor.com/',
+    url: 'https://ane-dulce-sabor.vercel.app/',
     siteName: 'Ane Dulce Sabor',
     title: 'Ane Dulce Sabor - Dulces Artesanales con amor',
     description: 'Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://ane-dulce-sabor.com/',
+    canonical: 'https://ane-dulce-sabor.vercel.app/',
   },
   icons: {
     icon: '/Logo.webp',
