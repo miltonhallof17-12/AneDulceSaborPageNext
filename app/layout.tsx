@@ -1,21 +1,22 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
-import AnalyticsTracker from "../components/AnalyticsTracker";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
-  themeColor: '#D85C56',
-}
+  themeColor: "#D85C56",
+};
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ane-dulce-sabor.vercel.app'),
+  metadataBase: new URL("https://ane-dulce-sabor.vercel.app"),
   title: {
     default: "Ane Dulce Sabor - Dulces Artesanales",
-    template: "%s | Ane Dulce Sabor"
+    template: "%s | Ane Dulce Sabor",
   },
-  description: "Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.",
-  keywords: ["dulces artesanales", "pasteles", "postres", "tortas", "repostería", "bakery", "desserts", "cakes"],
+  description:
+    "Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.",
   authors: [{ name: "Ane Dulce Sabor" }],
   creator: "Ane Dulce Sabor",
   publisher: "Ane Dulce Sabor",
@@ -25,65 +26,70 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   openGraph: {
-    type: 'website',
-    locale: 'es_AR',
-    url: 'https://ane-dulce-sabor.vercel.app',
-    siteName: 'Ane Dulce Sabor',
-    title: 'Ane Dulce Sabor - Dulces Artesanales',
-    description: 'Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.',
+    type: "website",
+    locale: "es_AR",
+    url: "https://ane-dulce-sabor.vercel.app",
+    siteName: "Ane Dulce Sabor",
+    title: "Ane Dulce Sabor - Dulces Artesanales",
+    description:
+      "Dulces artesanales elaborados con amor y los mejores ingredientes. Descubre nuestra selección de tortas, postres y tentaciones.",
     images: [
       {
-        url: '/Logo.webp',
+        url: "/Logo.webp",
         width: 1200,
         height: 630,
-        alt: 'Ane Dulce Sabor - Dulces Artesanales',
+        alt: "Ane Dulce Sabor - Dulces Artesanales",
       },
     ],
   },
   alternates: {
-    canonical: 'https://ane-dulce-sabor.vercel.app',
+    canonical: "https://ane-dulce-sabor.vercel.app",
   },
   icons: {
-    icon: '/Logo.webp',
-    shortcut: '/Logo.webp',
-    apple: '/Logo.webp',
+    icon: "/Logo.webp",
+    shortcut: "/Logo.webp",
+    apple: "/Logo.webp",
   },
-  manifest: '/manifest.json',
+  manifest: "/manifest.json",
 };
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
-
+}) {
   return (
     <html lang="es">
       <body>
         {children}
+
         {/* Google Analytics */}
-        {gaId && (
+        {GA_ID && (
           <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${gaId}');
-                `,
-              }}
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
             />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                window.gtag = gtag;
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}');
+              `}
+            </Script>
           </>
         )}
+
         <AnalyticsTracker />
       </body>
     </html>

@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
+
 // Extend the Window interface to include gtag
 declare global {
   interface Window {
