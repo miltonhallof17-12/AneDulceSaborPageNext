@@ -10,6 +10,17 @@ export const metadata: Metadata = {
     description: "Dulces artesanales elaborados con amor. Descubre nuestras tortas, postres y tentaciones únicas elaboradas con ingredientes premium.",
     images: ["/Logo.webp"],
   },
+  alternates: {
+    canonical: 'https://ane-dulce-sabor.vercel.app/',
+    languages: {
+      'es': 'https://ane-dulce-sabor.vercel.app/',
+      'es-ES': 'https://ane-dulce-sabor.vercel.app/',
+      'es-MX': 'https://ane-dulce-sabor.vercel.app/',
+      'es-AR': 'https://ane-dulce-sabor.vercel.app/',
+      'es-CO': 'https://ane-dulce-sabor.vercel.app/',
+      'x-default': 'https://ane-dulce-sabor.vercel.app/'
+    }
+  },
 }
 
 // Local Business Schema for home page
