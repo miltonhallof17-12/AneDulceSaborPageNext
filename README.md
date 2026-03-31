@@ -85,7 +85,7 @@ Este proyecto fue migrado desde Vite a Next.js manteniendo:
 
 ## Despliegue
 
-Este proyecto está desplegado en: [GitHub Repository](https://github.com/miltonhallof17-aneDulceSaborPageNext.git)
+Este proyecto está desplegado en: https://ane-dulce-sabor.vercel.app/
 
 ## Desarrollo
 
