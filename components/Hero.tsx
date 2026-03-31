@@ -75,7 +75,7 @@ const Hero = ({ isVisible }: HeroProps) => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/catalogo">
-                    <GlowingButton className="w-64 sm:w-auto">
+                    <GlowingButton className="w-48 mx-auto sm:w-auto">
                       Ver Catálogo
                     </GlowingButton>
                   </Link>
@@ -84,7 +84,7 @@ const Hero = ({ isVisible }: HeroProps) => {
                     href="https://wa.me/5493484407826?text=" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-64 sm:w-auto"
+                    className="w-48 mx-auto sm:w-auto"
                   >
                     Encargar Ahora
                   </GlowingButton>
