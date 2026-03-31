@@ -4,10 +4,10 @@ import StructuredData from '../components/StructuredData'
 
 export const metadata: Metadata = {
   title: "Ane Dulce Sabor - Dulces Artesanales de Calidad",
-  description: "Dulces artesanales elaborados con amor. Descubre nuestras tortas, postres y tentaciones únicas elaboradas con ingredientes premium.",
+  description: "Dulces artesanales elaborados con amor. Descubre nuestras tortas, postres y tentaciones únicas elaboradas con mucho amor.",
   openGraph: {
-    title: "Ane Dulce Sabor - Dulces Artesanales de Calidad",
-    description: "Dulces artesanales elaborados con amor. Descubre nuestras tortas, postres y tentaciones únicas elaboradas con ingredientes premium.",
+    title: "Ane Dulce Sabor - Dulces Artesanales de Calidad y unicos",
+    description: "Dulces artesanales elaborados con amor. Descubre nuestras tortas, postres y tentaciones únicas elaboradas con mucho amor.",
     images: ["/Logo.webp"],
   },
   alternates: {

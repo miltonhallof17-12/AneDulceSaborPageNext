@@ -31,9 +31,9 @@ const CatalogPageClient = () => {
       {/* Hero Section for Products Page */}
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-[#D85C56] mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-[#D85C56] mb-4">
             Nuestros Productos
-          </h1>
+          </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Descubre nuestra completa selección de dulces artesanales, 
             cada uno elaborado con los mejores ingredientes y mucho amor.
