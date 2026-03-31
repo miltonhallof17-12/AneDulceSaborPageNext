@@ -73,7 +73,7 @@ const Hero = ({ isVisible }: HeroProps) => {
                 <p className="text-lg sm:text-xl text-white drop-shadow-md mb-8">
                   {slide.subtitle}
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <Link href="/catalogo">
                     <GlowingButton className="w-64 sm:w-auto">
                       Ver Catálogo
